@@ -6,6 +6,46 @@
 
 This repository contains code for an earthquake early warning system based on a conditional variational autoencoder (VAE). The system is designed to predict 27 spectral accelerations using 8 input variables: Peak Ground Acceleration ($PGA$), Peak Ground Displacement ($PGD$), Predominant Frequency ($F_p$), 5-95% Significant Duration  ($T_{sig}$), Arias Intensity ($I_a$), Cumulative Absolute Velocity  ($CAV$), Site Class ($S_c$), and direction flag ($dir$). 
 
+## Library Installation and Importing Libraries
+
+### Installation
+
+Ensure you have Python 3.x installed. Use the following pip commands to install the necessary libraries:
+
+<code>pip install numpy pandas matplotlib scikit-learn keras tensorflow</code><br>
+
+<h3> Importing the libraries </h3>
+
+<code>import numpy as np</code><br>
+<code>import pandas as pd</code><br>
+<code>import matplotlib.pyplot as plt</code><br>
+<code>from sklearn.model_selection import train_test_split</code><br>
+<code>from sklearn.preprocessing import MinMaxScaler, StandardScaler</code><br>
+<code>from scipy.stats import kurtosis</code><br>
+<code>from keras.layers import Input, Dense, Lambda</code><br>
+<code>from keras.models import Model, Sequential, load_model</code><br>
+<code>from keras import backend as K</code><br>
+<code>from keras.losses import mse</code><br>
+<code>from keras.optimizers import Adam</code><br>
+<code>from keras.callbacks import ModelCheckpoint, Callback</code><br>
+<code>import tensorflow as tf</code><br>
+
+## About the libraries
+
+- numpy: For numerical operations and array manipulations.
+- pandas: For data manipulation and handling.
+- matplotlib.pyplot: For plotting graphs and visualizations.
+- sklearn.model_selection.train_test_split: For splitting data into training and testing sets.
+- sklearn.preprocessing.MinMaxScaler, sklearn.preprocessing.StandardScaler: For scaling numerical input data.
+- keras.layers: For defining layers in the neural network model.
+- keras.models: For defining and manipulating the neural network models.
+- keras.backend: Provides operations that are not yet part of the official Keras API.
+- keras.losses.mse: Mean squared error loss function, commonly used in regression tasks.
+- keras.optimizers.Adam: Optimizer algorithm for gradient-based optimization.
+- tensorflow: Backend framework for Keras deep learning library.
+- keras.callbacks.ModelCheckpoint: Callback to save the model after every epoch.
+- keras.callbacks.Callback: Base class for Keras callbacks.
+
 ## Architecture
 
 The core of the system is a VAE, which is trained to map spectral accelerations to themselves. The CVAE consists of:
