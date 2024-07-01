@@ -85,3 +85,13 @@ Given that spectral accelerations are not known beforehand in an early warning s
 ## Output
 
 This architecture facilitates a direct mapping from the input variables to the predicted spectral accelerations, enabling real-time earthquake early warning predictions.
+
+`Created in Jul 2024`
+
+`@author: Pavan Mohan Neelamraju`
+
+`Affiliation: Indian Institute of Technology Madras`
+
+**Email**: npavanmohan3@gmail.com
+
+**Personal Website 🔴🔵**: [pavanmohann.github.io](https://pavanmohann.github.io/)
