@@ -72,7 +72,8 @@ The core of the system is a VAE, which is trained to map spectral accelerations 
 - *Initial Training*: VAE trained for 50 epochs (batch size: 16).
 - *Mapping Network*: Trained for 600 epochs (batch size: 64) to optimize conditional input mapping.
 
-![image](https://github.com/PavanMohanN/EEW_system_Variational/assets/65588614/273031b6-3776-4d88-ab2a-2a99abf829f4)
+![image](https://github.com/PavanMohanN/EEW_system_Variational/assets/65588614/0cb249d7-d8ba-4903-9195-d13aa7cce51a)
+
 
 Fig. 1. Depiction of True Vs Recorded Values of Spectral Acceleration.
 
