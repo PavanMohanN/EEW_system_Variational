@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains code for an earthquake early warning system based on a conditional variational autoencoder (VAE). The system is designed to predict 27 spectral accelerations using 8 input variables: Peak Ground Acceleration ($PGA$), Peak Ground Displacement ($PGD$), Predominant Frequency ($F_p$), 5-95% Significant Duration  ($T_{sig}$), Arias Intensity ($I_a$), Cumulative Absolute Velocity  ($CAV$), Site Class ($S_c$), and direction flag ($dir$). 
+This repository contains code for an earthquake early warning system based on a variational autoencoder (VAE). The system is designed to predict 27 spectral accelerations using 8 input variables: Peak Ground Acceleration ($PGA$), Peak Ground Displacement ($PGD$), Predominant Frequency ($F_p$), 5-95% Significant Duration  ($T_{sig}$), Arias Intensity ($I_a$), Cumulative Absolute Velocity  ($CAV$), Site Class ($S_c$), and direction flag ($dir$). 
 
 ## Library Installation and Importing Libraries
 
@@ -48,7 +48,7 @@ Ensure you have Python 3.x installed. Use the following pip commands to install 
 
 ## Architecture
 
-The core of the system is a VAE, which is trained to map spectral accelerations to themselves. The CVAE consists of:
+The core of the system is a VAE, which is trained to map spectral accelerations to themselves. The VAE consists of:
 - *Architecture*: CVAE includes an encoder, a mapping layer, and a decoder.
 - *Encoder*: Reduces $S_a(T)$ to a latent space.
 - *Mapping Layers*: Incorporates 8 conditional inputs (GMPs) into the latent space.
@@ -62,9 +62,9 @@ The core of the system is a VAE, which is trained to map spectral accelerations 
 
 ### Loss Function
 
-- *Objective*: Minimize combined reconstruction (L_recon) and regularization (L_reg) losses.
-- *$L_{recon}$*: Measures decoder's ability to reconstruct Sa(T).
-- *$L_{reg}$*: Encourages latent space to approximate a standard Gaussian distribution.
+- *Objective*: Minimize combined reconstruction ( $L_recon$ ) and regularization ( $L_reg$ ) losses.
+- $L_recon$: Measures decoder's ability to reconstruct Sa(T).
+- $L_reg$: Encourages latent space to approximate a standard Gaussian distribution.
 
 ### Model Training
 
