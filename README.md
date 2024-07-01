@@ -63,8 +63,8 @@ The core of the system is a VAE, which is trained to map spectral accelerations 
   ### Loss Function
 
   - *Objective*: Minimize combined reconstruction (L_recon) and regularization (L_reg) losses.
-  - *$L_recon$*: Measures decoder's ability to reconstruct Sa(T).
-  - *$L_reg$*: Encourages latent space to approximate a standard Gaussian distribution.
+  - *$L_{recon}$*: Measures decoder's ability to reconstruct Sa(T).
+  - *$L_{reg}$*: Encourages latent space to approximate a standard Gaussian distribution.
  
   ### Model Training
 
