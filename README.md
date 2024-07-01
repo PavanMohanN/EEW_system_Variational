@@ -77,16 +77,21 @@ The core of the system is a VAE, which is trained to map spectral accelerations 
 - *Analysis*: Evaluates model response to conditional inputs (GMPs).
 - *Visualization*: Latent variables ($z_1, z_2, z_3$) (herein the code the following variables were named LA1, LA2 and LA3 respectively) mapped against conditional inputs to validate model effectiveness.
 
+- The *Mapping2Output.ipynb* file explains the procedure till here.
+
 ## Input Mapping Layers - The game changer
 Given that spectral accelerations are not known beforehand in an early warning scenario, additional layers are designed to map the input variables directly to the latent space of the VAE. This architecture involves:
 - *Two separate layers*: These map the 8 input variables ($PGA, PGD, F_p, T_{sig}, {I_a}, CAV, S_c, dir$) to the latent space of the VAE.
 - *Concatenation*: The encoder component of the VAE is disconnected, and the layers mapping inputs to the latent space are concatenated directly.
+
 
 ## Output
 
 This architecture facilitates a direct mapping from the input variables to the predicted spectral accelerations, enabling real-time earthquake early warning predictions.
 
 `Created in Jul 2024`
+
+`File: Mapping2Output.ipynb`
 
 `@author: Pavan Mohan Neelamraju`
 
