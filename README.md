@@ -84,6 +84,10 @@ Fig. 1. Depiction of True Vs Recorded Values of Spectral Acceleration.
 
 - The *Mapping2Output.ipynb* file explains the procedure till here.
 
+![image](https://github.com/PavanMohanN/EEW_system_Variational/assets/65588614/9f1ca449-893b-4a17-a289-038fb3b17f9f)
+
+Fig. 2. Sensitivity with respect to various parameters.
+
 ## Input Mapping Layers - The game changer
 Given that spectral accelerations are not known beforehand in an early warning scenario, additional layers are designed to map the input variables directly to the latent space of the VAE. This architecture involves:
 - *Two separate layers*: These map the 8 input variables ($PGA, PGD, F_p, T_{sig}, {I_a}, CAV, S_c, dir$) to the latent space of the VAE.
