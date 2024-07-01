@@ -49,8 +49,33 @@ Ensure you have Python 3.x installed. Use the following pip commands to install 
 ## Architecture
 
 The core of the system is a VAE, which is trained to map spectral accelerations to themselves. The CVAE consists of:
-- *Encoder*: Maps spectral accelerations to a latent space.
-- *Decoder*: Reconstructs spectral accelerations from the latent space.
+- *Architecture*: CVAE includes an encoder, a mapping layer, and a decoder.
+- *Encoder*: Reduces $S_a(T)$ to a latent space.
+- *Mapping Layers*: Incorporates 8 conditional inputs (GMPs) into the latent space.
+- *Decoder*: Reconstructs $S_a(T)$ from the latent space.
+
+  ### Hyperparameters
+
+  - *Network Structure*: Symmetric encoder and decoder with hidden layers.
+  - *Latent Space*: Dimensionality of 3 ($z_1, z_2, z_3$).
+  - *Mapping Layers*: Two hidden layers with 4 and 3 nodes, using ReLU activation.
+ 
+  ### Loss Function
+
+  - *Objective*: Minimize combined reconstruction (L_recon) and regularization (L_reg) losses.
+  - *$L_recon$*: Measures decoder's ability to reconstruct Sa(T).
+  - *$L_reg$*: Encourages latent space to approximate a standard Gaussian distribution.
+ 
+  ### Model Training
+
+  - *Training Strategy*: K-fold Cross Validation, Adam optimizer.
+  - *Initial Training*: VAE trained for 50 epochs (batch size: 16).
+  - *Mapping Network*: Trained for 600 epochs (batch size: 64) to optimize conditional input mapping.
+ 
+  ### Sensitivity Study
+
+  - *Analysis*: Evaluates model response to conditional inputs (GMPs).
+  - *Visualization*: Latent variables ($z_1, z_2, z_3$) (herein the code the following variables were named LA1, LA2 and LA3 respectively) mapped against conditional inputs to validate model effectiveness.
 
 ## Input Mapping Layers - The game changer
 Given that spectral accelerations are not known beforehand in an early warning scenario, additional layers are designed to map the input variables directly to the latent space of the VAE. This architecture involves:
