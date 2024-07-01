@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains code for an earthquake early warning system based on a conditional variational autoencoder (VAE). The system is designed to predict 27 spectral accelerations using 8 input variables: Peak Ground Acceleration ($PGA$), Peak Ground Displacement ($PGD$), Predominant Frequency ($F_p$), 5-95% Significant Duration  ($T_{sig}$), Arias Intensity ($I_a$), Cumulative Absolute Velocity  ($CAV$), Site Class ($S_c$), and direction flag ($dir$).
+This repository contains code for an earthquake early warning system based on a conditional variational autoencoder (VAE). The system is designed to predict 27 spectral accelerations using 8 input variables: Peak Ground Acceleration ($PGA$), Peak Ground Displacement ($PGD$), Predominant Frequency ($F_p$), 5-95% Significant Duration  ($T_{sig}$), Arias Intensity ($I_a$), Cumulative Absolute Velocity  ($CAV$), Site Class ($S_c$), and direction flag ($dir$). 
 
 ## Architecture
 
