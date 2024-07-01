@@ -72,6 +72,10 @@ The core of the system is a VAE, which is trained to map spectral accelerations 
 - *Initial Training*: VAE trained for 50 epochs (batch size: 16).
 - *Mapping Network*: Trained for 600 epochs (batch size: 64) to optimize conditional input mapping.
 
+![image](https://github.com/PavanMohanN/EEW_system_Variational/assets/65588614/273031b6-3776-4d88-ab2a-2a99abf829f4)
+
+Fig. 1. Depiction of True Vs Recorded Values of Spectral Acceleration.
+
 ### Sensitivity Study
 
 - *Analysis*: Evaluates model response to conditional inputs (GMPs).
@@ -84,6 +88,7 @@ Given that spectral accelerations are not known beforehand in an early warning s
 - *Two separate layers*: These map the 8 input variables ($PGA, PGD, F_p, T_{sig}, {I_a}, CAV, S_c, dir$) to the latent space of the VAE.
 - *Concatenation*: The encoder component of the VAE is disconnected, and the layers mapping inputs to the latent space are concatenated directly.
 
+- For concatenation of mapping layers with the decoder, and creating a standaone network, refer to *Concatenation2Compact.ipynb*
 
 ## Output
 
