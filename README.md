@@ -109,4 +109,4 @@ This architecture facilitates a direct mapping from the input variables to the p
 
 **Email**: npavanmohan3@gmail.com
 
-**Personal Website 🔴🔵**: [pavanmohann.github.io](https://pavanmohann.github.io/)
+**Personal Website 🔴🔵**: [[pavanmohan.netlify.app](https://pavanmohan.netlify.app/)]
