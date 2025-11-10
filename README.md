@@ -88,7 +88,7 @@ Fig. 1. Depiction of True Vs Recorded Values of Spectral Acceleration.
 
 Fig. 2. Sensitivity with respect to various parameters.
 
-## Input Mapping Layers - The game changer
+## Input Mapping Layers 
 Given that spectral accelerations are not known beforehand in an early warning scenario, additional layers are designed to map the input variables directly to the latent space of the VAE. This architecture involves:
 - *Two separate layers*: These map the 8 input variables ($PGA, PGD, F_p, T_{sig}, {I_a}, CAV, S_c, dir$) to the latent space of the VAE.
 - *Concatenation*: The encoder component of the VAE is disconnected, and the layers mapping inputs to the latent space are concatenated directly.
