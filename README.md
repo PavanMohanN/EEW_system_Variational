@@ -10,6 +10,14 @@ This repository contains code for an earthquake early warning system based on a 
 
 ### Installation
 
+To guarantee reproducibility, the execution environment and required dependencies are explicitly detailed in the repository's README.md and the header of the executable.ipynb. The workflow requires Python 3.12.10 and the following core library versions:
+
+    cloudpickle: 3.1.2
+    numpy: 2.0.2
+    scikit-learn: 1.6.1
+    tensorflow: 2.19.0
+    torch: 2.11.0+cpu
+
 Ensure you have Python 3.x installed. Use the following pip commands to install the necessary libraries:
 
 <code>pip install numpy pandas matplotlib scikit-learn keras tensorflow</code><br>
