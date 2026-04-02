@@ -10,7 +10,7 @@ This repository contains code for an earthquake early warning system based on a 
 
 ### Installation
 
-To guarantee reproducibility, the execution environment and required dependencies are explicitly detailed in the repository's README.md and the header of the executable.ipynb. The workflow requires Python 3.12.10 and the following core library versions:
+The execution environment and required dependencies are explicitly detailed in the executable.ipynb too. The workflow requires Python 3.12.10 and the following core library versions:
 
     cloudpickle: 3.1.2
     numpy: 2.0.2
