@@ -18,7 +18,7 @@ The execution environment and required dependencies are explicitly detailed in t
     tensorflow: 2.19.0
     torch: 2.11.0+cpu
 
-Ensure you have Python 3.x installed. Use the following pip commands to install the necessary libraries:
+Ensure you have Python 3.12.10 installed. Use the following pip commands to install the necessary libraries:
 
 <code>pip install numpy pandas matplotlib scikit-learn keras tensorflow</code><br>
 
